@@ -1,4 +1,3 @@
-from turtle import width
 import streamlit as st
 import random
 
@@ -8,7 +7,7 @@ def show_main_page():
     st.subheader('Исследование выпрямительных устройств')
 
     # Добавляем изображение перед остальным кодом
-    st.image("однополупериодный выпрямитель.jpg", caption="Рисунок 1. Схема однополупериодного выпрямителя", use_column_width=True)
+    st.image("однофазный однополупериодный.jpg", caption="Рисунок 1. Схема однополупериодного выпрямителя", use_column_width=True)
 
     Uinput = st.number_input('Введите напряжение вторичной обмотки трансформатора (U2)', min_value=10, max_value=20, value="min", step=1)
     st.write('U2 трансформатора = ', Uinput, ' В')
@@ -27,7 +26,7 @@ def show_single_phase_bridge_page():
     st.title('Однофазная мостовая схема выпрямления')
 
     # Добавляем изображение перед остальным кодом
-    st.image("мостовой выпрямитель.jpg", caption="Рисунок 2. Схема мостового выпрямителя", use_column_width=True)
+    st.image("мостовой однофазный.jpg", caption="Рисунок 2. Схема мостового выпрямителя", use_column_width=True)
 
     Uinput = st.number_input('Введите напряжение вторичной обмотки трансформатора (U2)', min_value=10, max_value=20, value="min", step=1)
     st.write('U2 трансформатора = ', Uinput, ' В')
